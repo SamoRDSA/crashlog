@@ -1,0 +1,205 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 5/13/20 8:38 PM
+Description: mouseClicked event handler
+
+java.lang.NoSuchMethodError: com.ldtteam.structures.lib.BlueprintUtils.getPrimaryBlockOffset(Lcom/ldtteam/structures/blueprints/v1/Blueprint;)Lnet/minecraft/util/Tuple;
+	at com.minecolonies.coremod.client.gui.WindowMinecoloniesBuildTool.paste(WindowMinecoloniesBuildTool.java:86) ~[?:0.10.771-RELEASE] {re:classloading}
+	at com.ldtteam.structurize.client.gui.WindowBuildTool.paste(WindowBuildTool.java:306) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.structurize.client.gui.WindowBuildTool.pasteNice(WindowBuildTool.java:271) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.minecolonies.coremod.client.gui.WindowMinecoloniesBuildTool.checkAndPlace(WindowMinecoloniesBuildTool.java:127) ~[?:0.10.771-RELEASE] {re:classloading}
+	at com.ldtteam.structurize.client.gui.WindowBuildTool.confirmClicked(WindowBuildTool.java:1074) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.structurize.client.gui.WindowBuildTool$$Lambda$7721/19433118.run(Unknown Source) ~[?:?] {}
+	at com.ldtteam.structurize.client.gui.AbstractWindowSkeleton.lambda$registerButton$0(AbstractWindowSkeleton.java:40) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.structurize.client.gui.AbstractWindowSkeleton$$Lambda$7712/253102408.accept(Unknown Source) ~[?:?] {}
+	at com.ldtteam.structurize.client.gui.AbstractWindowSkeleton.onButtonClicked(AbstractWindowSkeleton.java:67) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.controls.Button.handleClick(Button.java:95) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.Pane.click(Pane.java:480) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.views.View$$Lambda$7790/2135382997.accept(Unknown Source) ~[?:?] {}
+	at com.ldtteam.blockout.views.View.mouseEventProcessor(View.java:307) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.views.View.mouseClickableEventHandler(View.java:271) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.views.View.click(View.java:141) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.views.View$$Lambda$7790/2135382997.accept(Unknown Source) ~[?:?] {}
+	at com.ldtteam.blockout.views.View.mouseEventProcessor(View.java:307) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.views.View.mouseClickableEventHandler(View.java:271) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.views.View.click(View.java:141) ~[?:0.10.313-RELEASE] {re:classloading}
+	at com.ldtteam.blockout.BOScreen.mouseClicked(BOScreen.java:170) ~[?:0.10.313-RELEASE] {re:classloading}
+	at net.minecraft.client.MouseHelper.lambda$mouseButtonCallback$0(MouseHelper.java:82) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHelper$$Lambda$5254/101264705.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.client.gui.screen.Screen.wrapScreenError(Screen.java:446) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHelper.func_198023_a(MouseHelper.java:80) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHelper.lambda$null$4(MouseHelper.java:163) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHelper$$Lambda$5253/1772491367.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(SourceFile:94) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.MouseHelper.lambda$registerCallbacks$5(MouseHelper.java:162) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHelper$$Lambda$4267/1605666571.invoke(Unknown Source) ~[?:?] {}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar:build 10] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10] {}
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) ~[lwjgl-glfw-3.2.2.jar:build 10] {}
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(SourceFile:105) ~[?:?] {re:classloading}
+	at net.minecraft.client.MainWindow.func_227802_e_(MainWindow.java:296) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:946) [?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:553) [?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(SourceFile:204) [?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56) [forge-1.15.2-31.1.79.jar:31.1] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$411/1107201631.call(Unknown Source) [forge-1.15.2-31.1.79.jar:31.1] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-5.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-5.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-5.1.0.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.1.0.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.1.0.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at com.minecolonies.coremod.client.gui.WindowMinecoloniesBuildTool.paste(WindowMinecoloniesBuildTool.java:86)
+	at com.ldtteam.structurize.client.gui.WindowBuildTool.paste(WindowBuildTool.java:306)
+	at com.ldtteam.structurize.client.gui.WindowBuildTool.pasteNice(WindowBuildTool.java:271)
+	at com.minecolonies.coremod.client.gui.WindowMinecoloniesBuildTool.checkAndPlace(WindowMinecoloniesBuildTool.java:127)
+	at com.ldtteam.structurize.client.gui.WindowBuildTool.confirmClicked(WindowBuildTool.java:1074)
+	at com.ldtteam.structurize.client.gui.WindowBuildTool$$Lambda$7721/19433118.run(Unknown Source)
+	at com.ldtteam.structurize.client.gui.AbstractWindowSkeleton.lambda$registerButton$0(AbstractWindowSkeleton.java:40)
+	at com.ldtteam.structurize.client.gui.AbstractWindowSkeleton$$Lambda$7712/253102408.accept(Unknown Source)
+	at com.ldtteam.structurize.client.gui.AbstractWindowSkeleton.onButtonClicked(AbstractWindowSkeleton.java:67)
+	at com.ldtteam.blockout.controls.Button.handleClick(Button.java:95)
+	at com.ldtteam.blockout.Pane.click(Pane.java:480)
+	at com.ldtteam.blockout.views.View$$Lambda$7790/2135382997.accept(Unknown Source)
+	at com.ldtteam.blockout.views.View.mouseEventProcessor(View.java:307)
+	at com.ldtteam.blockout.views.View.mouseClickableEventHandler(View.java:271)
+	at com.ldtteam.blockout.views.View.click(View.java:141)
+	at com.ldtteam.blockout.views.View$$Lambda$7790/2135382997.accept(Unknown Source)
+	at com.ldtteam.blockout.views.View.mouseEventProcessor(View.java:307)
+	at com.ldtteam.blockout.views.View.mouseClickableEventHandler(View.java:271)
+	at com.ldtteam.blockout.views.View.click(View.java:141)
+	at com.ldtteam.blockout.BOScreen.mouseClicked(BOScreen.java:170)
+	at net.minecraft.client.MouseHelper.lambda$mouseButtonCallback$0(MouseHelper.java:82)
+	at net.minecraft.client.MouseHelper$$Lambda$5254/101264705.run(Unknown Source)
+
+-- Affected screen --
+Details:
+	Screen name: com.ldtteam.blockout.BOScreen
+Stacktrace:
+	at net.minecraft.client.gui.screen.Screen.wrapScreenError(Screen.java:446)
+	at net.minecraft.client.MouseHelper.func_198023_a(MouseHelper.java:80)
+	at net.minecraft.client.MouseHelper.lambda$null$4(MouseHelper.java:163)
+	at net.minecraft.client.MouseHelper$$Lambda$5253/1772491367.run(Unknown Source)
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(SourceFile:94)
+	at net.minecraft.client.MouseHelper.lambda$registerCallbacks$5(MouseHelper.java:162)
+	at net.minecraft.client.MouseHelper$$Lambda$4267/1605666571.invoke(Unknown Source)
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36)
+	at org.lwjgl.system.JNI.invokeV(Native Method)
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101)
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(SourceFile:105)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['SamoRDSA'/146, l='MpServer', x=-126.72, y=69.00, z=1.57]]
+	Chunk stats: Client Chunk Cache: 841, 550
+	Level dimension: DimensionType{minecraft:overworld}
+	Level name: MpServer
+	Level seed: 9139429545114411244
+	Level generator: ID 07 - biomesoplenty, ver 0. Features enabled: false
+	Level generator options: {}
+	Level spawn location: World: (208,70,16), Chunk: (at 0,4,0 in 13,1; contains blocks 208,0,16 to 223,255,31), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 40180 game time, 57957 day time
+	Known server brands: 
+	Level was modded: false
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Server brand: forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.func_72914_a(ClientWorld.java:442)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:1763)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:567)
+	at net.minecraft.client.main.Main.main(SourceFile:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$411/1107201631.call(Unknown Source)
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72)
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81)
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 3912196416 bytes (3730 MB) / 6442450944 bytes (6144 MB) up to 6442450944 bytes (6144 MB)
+	CPUs: 8
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx6G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	ModLauncher: 5.1.0+69+master.79f13f7
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-2.2.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.1.79.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.79.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.1.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.1.79.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.79.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.1.79.jar fml TRANSFORMATIONSERVICE 
+	FML: 31.1
+	Forge: net.minecraftforge:31.1.79
+	FML Language Providers: 
+		javafml@31.1
+		minecraft@1
+	Mod List: 
+		forge-1.15.2-31.1.79-client.jar Minecraft {minecraft@1.15.2 DONE}
+		mcw-bridges-1.0.4fix-mc1.15.2.jar Macaw's Bridges {mcwbridges@1.0.4 DONE}
+		QuarkOddities-1.15.2.jar Quark Oddities {quarkoddities@1.15.2 DONE}
+		AmbientSounds_v3.0.19_mc1.15.2.jar Ambient Sounds {ambientsounds@3.0.3 DONE}
+		titanium-1.15.2-2.4.0.jar Titanium {titanium@2.4.0 DONE}
+		SilentLib-1.15.2-4.6.1+49.jar Silent Lib {silentlib@4.6.1+49 DONE}
+		BiomesOPlenty-1.15.2-10.0.0.358-universal.jar Biomes O' Plenty {biomesoplenty@1.15.2-10.0.0.358 DONE}
+		valkyrielib-1.15.2-3.0.2.1.jar ValkyrieLib {valkyrielib@1.15.2-3.0.2.1 DONE}
+		SilentGear-1.15.2-1.6.3+89.jar Silent Gear {silentgear@1.6.3+89 DONE}
+		jei-1.15.2-6.0.0.4.jar Just Enough Items {jei@6.0.0.4 DONE}
+		simplefarming-1.15.2-1.2.7.jar Simple Farming {simplefarming@1.15.2-1.2.7 DONE}
+		simplybackpacks-1.15.2-1.4.5.jar Simply Backpacks {simplybackpacks@1.15.2-1.4.5 DONE}
+		reap-1.12.3.jar Reap Mod {reap@1.12.3 DONE}
+		Waystones_1.15.2-6.0.1.jar Waystones {waystones@6.0.1 DONE}
+		carrotslib-mc1.15.2-2.5.jar Carrots Lib {carrots@2.5.0 DONE}
+		vanillafoodpantry-mc1.15.2-5.5.jar Vanilla Food Pantry {vanillafoodpantry@5.5.0 DONE}
+		journeymap-1.15.2-5.7.0b2.jar Journeymap {journeymap@5.7.0b2 DONE}
+		enviromats-1.15.2-2.0.2.1.jar Environmental Materials {enviromats@1.15.2-2.0.2.1 DONE}
+		AutoRegLib-1.5-40.jar AutoRegLib {autoreglib@1.5-40 DONE}
+		StorageDrawers-1.15.2-7.0.2.jar Storage Drawers {storagedrawers@1.15.2-7.0.1 DONE}
+		tombstone-4.3.6-1.15.2.jar Corail Tombstone {tombstone@4.3.6 DONE}
+		obfuscate-0.4.3-1.15.2.jar Obfuscate {obfuscate@0.4.3 DONE}
+		vehicle-mod-0.43.5-1.15.2.jar MrCrayfish's Vehicle Mod {vehicle@0.43.5 DONE}
+		structurize-0.10.313-RELEASE.jar Structurize {structurize@0.10.313-RELEASE DONE}
+		minecolonies-0.10.771-RELEASE-universal.jar Minecolonies {minecolonies@0.10.771-RELEASE DONE}
+		furniture-7.0.0-pre16-1.15.1.jar MrCrayfish's Furniture Mod {cfm@7.0.0-pre16 DONE}
+		mcw-furniture-1.0.1-mc1.15.1+1.15.2.jar Macaw's Furnitures {mcwfurnitures@1.0.1 DONE}
+		Hwyla-forge-1.10.8-B72_1.15.2.jar Waila {waila@version DONE}
+		forge-1.15.2-31.1.79-universal.jar Forge {forge@31.1.79 DONE}
+		Quark-r2.1-236.jar Quark {quark@r2.1-236 DONE}
+		FastLeafDecay-v22.jar FastLeafDecay {fastleafdecay@v22 DONE}
+	Launched Version: 1.15.2-forge-31.1.79
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: GeForce GT 710/PCIe/SSE2 GL version 4.6.0 NVIDIA 445.87, NVIDIA Corporation
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 8x Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
